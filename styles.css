@@ -1,0 +1,88 @@
+/*Universal selector*/
+* {
+    font-weight: bold;
+    color: #e67e22;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, section, footer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Selectors Showcase */
+h1 {
+    color: #3498db;
+}
+
+.box {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Apply styles to specific boxes */
+#box1 {
+    border: 2px solid #e74c3c;
+}
+
+#box2 {
+    border: 2px solid #2ecc71;
+}
+
+#box3 {
+    border: 2px solid #f39c12;
+}
+
+/* Apply styles using class selector */
+.box p {
+    font-style: italic;
+}
+
+/*trying Present attribute selector*/
+a[title] {
+	color: khaki;
+	background: grey; 
+}
+
+/*Trying Equals selector [attribute="value"]*/
+a[target="_blank"] {
+  background-color: yellow;
+}
+
+/*Trying White space selector*/
+[title~="flower"] {
+  text-align: center;
+  border: 2px solid grey;
+}
+
+/*Trying to use Begins with selector (^)*/
+[class^="top"] {
+  background: yellow;
+}
+
+/*Tryin CSS [attribute$="value"] Selector*/
+[class$="test"] {
+  background: yellow;
+}
+
+/*Trying CSS * selector*/
+[class*="fri"] {
+  background: yellow;
+}
+
+/*Tring CSS [attribute|="value"] selector*/
+[class|="top"] {
+  background: yellow;
+}
+
+h1[title~="flower"] {
+  border: none;
+}
