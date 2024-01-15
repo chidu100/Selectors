@@ -17,6 +17,11 @@ header, section, footer {
     border: 1px solid #ddd;
 }
 
+
+header:hover{
+  background-color: #2ecc71;
+}
+
 /* Selectors Showcase */
 h1 {
     color: #3498db;
@@ -57,29 +62,55 @@ a[target="_blank"] {
   background-color: yellow;
 }
 
+/*when hovered, the color of the text and background would change*/
+a[target="_blank"]:hover {
+  background-color: black;
+  color: #ddd;
+}
+
+/*when hovered, the color of the text and background would change*/
+a[title]:hover{
+  color: black;
+  background-color: #2ecc71;
+}
+
 /*Trying White space selector*/
 [title~="flower"] {
   text-align: center;
   border: 2px solid grey;
 }
 
+/*when you hover on the text, the border would remove*/
+[title~="flower"]:hover{
+  border: none;
+}
+
 /*Trying to use Begins with selector (^)*/
-[class^="top"] {
-  background: yellow;
+.content p:hover{
+  background-color: #3498db;
+}
+
+.content p:nth-of-type(odd){
+  background-color: yellow;
 }
 
 /*Tryin CSS [attribute$="value"] Selector*/
-[class$="test"] {
+.test p:nth-of-type(odd){
   background: yellow;
 }
 
+.test p:nth-of-type(even) {
+  background: green;
+}
+
 /*Trying CSS * selector*/
-[class*="fri"] {
+.fri p:nth-of-type(2n+0) {
   background: yellow;
 }
 
 /*Tring CSS [attribute|="value"] selector*/
-[class|="top"] {
+
+.top p:nth-of-type(2n-1) {
   background: yellow;
 }
 
